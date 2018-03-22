@@ -24,6 +24,20 @@
   <script src="js/axios.js"></script>
   <script src='js/jquery-3.3.1.min.js'></script>
   <script>
+  // -> function iniUserInfo() {}
+  // 0. UserDetail과 /apis/members/info/를 연결시키는 부분을 백엔드에 구현, Postmand으로 테스트
+
+  // 1. 클라이언트에 'token'이라는 Cookie가 있는지 확인
+  // 2. 만약 있다면 해당 값을 가져온 후
+  // 3. getUserInfo ()를 실행
+  //  -> UserDetail에 get요청, pk없음
+  //    URL: /apis/members/info/
+  //      HTTP Header 'Authorization'에  'Token <value>'값을 담아서 요청
+  //    request.user를 기준으로 seralize한 User정보를 리턴
+  // 4. 유저정보를 가져온 후 getAuthToken의 .then()아래 유저정보 표시 로직을 실행
+  </script>
+
+  <script>
     // 1. AuthToken을 받아오는 JS함수를 구현
     // function getAuthToken (username, password) {}
     // 주어진 매개변수 username과 password를 axios로 전달하고
